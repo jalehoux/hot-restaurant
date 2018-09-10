@@ -1,9 +1,9 @@
 var express = require('express')
 var path = require('path')
-var viewroute = express.Router();
+var tablesroute = express.Router();
 
-viewroute.get('/view', function(req, res){
-    res.sendFile(path.join(__dirname, '..', '../public/view.html'));
+tablesroute.get('/tables', function(req, res){
+    res.sendFile(path.join(__dirname, '..', '../public/tables.html'));
   });
   
-module.exports = viewroute;
+module.exports = tablesroute;
