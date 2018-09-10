@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Group 1 Hot Restaurant</title>
+    <title>Tables</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -15,10 +15,28 @@
 
         <div class="jumbotron text-center">
             <h1 class="display-4">Hot Restaurant</h1>
-            <p class="lead">We only have 5 tables! Book your seat before they all are gone!</p>
+            <p class="lead">Tables and Waiting List</p>
             <hr class="my-4">
-            <a class="btn btn-primary btn-lg" href="tables.html" role="button">View Tables</a>
+            <a class="btn btn-secondary btn-lg" href="index.html" role="button">Home</a>
             <a class="btn btn-danger btn-lg" href="reserve.html" role="button">Make Reservation</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Current Reservations:
+            </div>
+            <div class="card-body" id="reserve-list">
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Waiting List:
+            </div>
+            <div class="card-body" id="waiting-list">
+
+            </div>
         </div>
 
         <a href="#">API Table Link</a>
