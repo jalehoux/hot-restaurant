@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const tables = require('./routing/viewtables')
 const reservation = require('./routing/reserve')
+const index = require('./routing/index')
 
 // Sets up the Express App
 const app = express();
