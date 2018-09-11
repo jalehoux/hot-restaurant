@@ -55,8 +55,26 @@
         |
         <a href="#">API Wait List</a>
     </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript">
 
-    <script type="text/javascript"></script>
+        $("#res-submit").on("click", function (event) {
+            event.preventDefault();
+            var newreserve= {
+                name: $("#res-name").val().trim(),
+                phone: $("#res-number").val().trim(),
+                email: $("#res-email").val().trim(),
+                id: $("#res-uniqueid").val().trim()
+            };
+
+            $.post("/data", newreserve)
+                .then(function (data) {
+                    console.log("New Reservation", data);
+                    alert("Atempting to add reservation...");
+                });
+        });
+
+    </script>
 </body>
 
 </html>
