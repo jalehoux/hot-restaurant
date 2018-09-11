@@ -2,12 +2,16 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const path = require("path");
+const tables = require('.routing/viewtables')
+const reservation = require('.routing/reserve')
 
 // Sets up the Express App
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.static('public'))
+app.use(tables)
+app.use(reservation)
 
 // Sets up the Express App to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
