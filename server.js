@@ -13,6 +13,7 @@ const port = process.env.PORT || 3000;
 app.use(express.static('public'))
 app.use(tables)
 app.use(reservation)
+app.use(index)
 
 // Sets up the Express App to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
