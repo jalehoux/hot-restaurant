@@ -5,6 +5,7 @@ const path = require("path");
 const tables = require('./routing/viewtables')
 const reservation = require('./routing/reserve')
 const index = require('./routing/index')
+const data = require('./routing/getdata')
 
 // Sets up the Express App
 const app = express();
@@ -14,6 +15,7 @@ app.use(express.static('public'))
 app.use(tables)
 app.use(reservation)
 app.use(index)
+app.use(data)
 
 // Sets up the Express App to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
